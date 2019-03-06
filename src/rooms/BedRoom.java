@@ -25,8 +25,8 @@ public class BedRoom extends Room {
 	
 	//SUbClasses --- inline class
 	static class AirConditioning{
-		int x_coord = 4;
-		int y_coord = 2;
+		static int x_coord = 4;
+		static int y_coord = 2;
 		static float power = 2.5f;
 		static String brand = "Brown";
 		
@@ -35,8 +35,8 @@ public class BedRoom extends Room {
 		}
 	}
 	static class BigTV{
-		int x_coord = 2;
-		int y_coord = 5;
+		static int x_coord = 2;
+		static int y_coord = 5;
 		static String brand = "Samsung";
 		static int size = 40; 
 		static void about(){
@@ -45,8 +45,8 @@ public class BedRoom extends Room {
 	}
 	
 	public static class Chair{
-		int x_coord = 4;
-		int y_coord = 5;
+		static int x_coord = 4;
+		static int y_coord = 5;
 		
 		public static class Owner{
 			

@@ -8,13 +8,13 @@ public class Room {
 	}
 
 	public static void showMap(int width, int length){
-		for (int i = 1; i <= length; i++) {
-			for (int j = 1; j <= width; j++) {
-				if (i == 1 || i == length  ){
+		for (int i = 0; i < length; i++) {
+			for (int j = 0; j < width; j++) {
+				if (i == 0 || i == length-1  ){
 					System.out.print(" * ");
 				}
 				else{
-					if (j== 1 || j == width ){
+					if (j== 0 || j == width-1 ){
 						System.out.print(" * ");
 					}else{
 						System.out.print("   ");
@@ -23,7 +23,6 @@ public class Room {
 			}
 
 			System.out.print("\n");
-
 		}
 	}
 
